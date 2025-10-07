@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="icon" href="logo.png">
+    
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UoE Chess Club</title>
+<style>
+/* Base styling */
+body { margin:0; padding:0; overflow-x:hidden; font-family:Arial,sans-serif; background-color:whitesmoke; }
+nav { background-color:#3a0a0a; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; width:100%; box-sizing:border-box; position:sticky; top:0; z-index:1000; }
+.logo { color:whitesmoke; font-size:24px; font-weight:bold; }
+.nav-links { list-style:none; display:flex; gap:20px; margin:0; padding:0; }
+.nav-links li a { color:whitesmoke; text-decoration:none; transition:color 0.3s ease; }
+.nav-links li a:hover { color:gold; }
+.hamburger { display:none; flex-direction:column; cursor:pointer; }
+.hamburger div { width:25px; height:3px; background-color:whitesmoke; margin:4px 0; transition:all 0.3s ease; }
+@media(max-width:768px){.nav-links{width:100%;display:none;flex-direction:column;gap:10px;margin-top:10px;}.nav-links.active{display:flex;}.hamburger{display:flex;}}
+/* Hero section */
+.hero { background-color:#3a0a0a; color:whitesmoke; text-align:center; padding:80px 20px; }
+.hero h1 { font-size:48px; margin-bottom:20px; }
+.hero p { font-size:20px; margin-bottom:30px; }
+/* Buttons */
+.btn { background-color:gold; color:#3a0a0a; padding:15px 30px; text-decoration:none; border-radius:8px; font-weight:bold; margin:5px; display:inline-block; transition:0.3s; }
+.btn:hover { background-color:#fff; color:#3a0a0a; }
+/* Sections */
+section { padding:50px 20px; max-width:1000px; margin:auto; }
+h2 { color:#3a0a0a; text-align:center; margin-bottom:30px; }
+.card-container { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.card { background-color:#fff; border-radius:10px; padding:20px; flex:1 1 250px; text-align:center; box-shadow:0 0 10px rgba(0,0,0,0.1); transition:transform 0.3s; }
+.card:hover { transform:scale(1.05); }
+.card h3 { color:#3a0a0a; margin-bottom:15px; }
+.card p { color:#333; margin-bottom:15px; }
+</style>
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+<nav>
+<div class="logo">UoE Chess Club ♟️</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="join.html">Join</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="leaderboard.html">Leaderboard</a></li>
+<li><a href="learn.html">Learn</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+<h1>Welcome to UoE Chess Club ♟️</h1>
+<p>Join us to play, learn, and compete in chess at the University of Eldoret.</p>
+<a href="join.html" class="btn">Join Now</a>
+<a href="events.html" class="btn">View Events</a>
+</div>
+
+<!-- Features / Quick Links -->
+<section>
+<h2>Explore Our Club</h2>
+<div class="card-container">
+  <div class="card">
+    <h3>Events</h3>
+    <p>Check out upcoming tournaments, workshops, and meetings.</p>
+    <a href="events.html" class="btn">Go to Events</a>
+  </div>
+  <div class="card">
+    <h3>Gallery</h3>
+    <p>See highlights from our club activities and tournaments.</p>
+    <a href="gallery.html" class="btn">View Gallery</a>
+  </div>
+  <div class="card">
+    <h3>Leaderboard</h3>
+    <p>Discover the top players in our club and track your ranking.</p>
+    <a href="leaderboard.html" class="btn">See Leaderboard</a>
+  </div>
+  <div class="card">
+    <h3>Learn</h3>
+    <p>Improve your chess skills with lessons, puzzles, and tutorials.</p>
+    <a href="learn.html" class="btn">Start Learning</a>
+  </div>
+  <div class="card">
+    <h3>Team</h3>
+    <p>Meet the club ,  captain, assistant captain,and team members.</p>
+    <a href="team.html" class="btn">Meet the Team</a>
+  </div>
+</div>
+</section>
+
+<script>
+function toggleMenu(){document.querySelector('.nav-links').classList.toggle('active');}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events - UoE Chess Club</title>
+<style>
+/* Same CSS as join.html */
+body { margin:0; padding:0; overflow-x:hidden; font-family:Arial,sans-serif; background-color:whitesmoke; }
+nav { background-color:#3a0a0a; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; width:100%; box-sizing:border-box; position:sticky; top:0; z-index:1000; }
+.logo { color:whitesmoke; font-size:24px; font-weight:bold; }
+.nav-links { list-style:none; display:flex; gap:20px; margin:0; padding:0; }
+.nav-links li a { color:whitesmoke; text-decoration:none; transition:color 0.3s ease; }
+.nav-links li a:hover { color:gold; }
+.hamburger { display:none; flex-direction:column; cursor:pointer; }
+.hamburger div { width:25px; height:3px; background-color:whitesmoke; margin:4px 0; transition:all 0.3s ease; }
+@media(max-width:768px){.nav-links{width:100%;display:none;flex-direction:column;gap:10px;margin-top:10px;}.nav-links.active{display:flex;}.hamburger{display:flex;}}
+section { padding:30px; max-width:1000px; margin:auto; }
+h1 { color:#3a0a0a; text-align:center; }
+p { color:#333; font-size:18px; text-align:center; }
+.event { background-color:#fff; padding:20px; margin:15px 0; border-radius:8px; box-shadow:0 0 5px rgba(0,0,0,0.1); }
+</style>
+</head>
+<body>
+<nav>
+<div class="logo">UoE Chess Club ♟️</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="join.html">Join</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="leaderboard.html">Leaderboard</a></li>
+<li><a href="learn.html">Learn</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+</nav>
+
+<section>
+<h1>Upcoming Events</h1>
+<div class="event">
+<h2>Inter-University Chess Tournament</h2>
+<p>Date: 20th Oct 2025 | Location: Main Hall</p>
+</div>
+<div class="event">
+<h2>Monthly Chess Workshop</h2>
+<p>Date: 28th Oct 2025 | Location: Library Room 101</p>
+</div>
+<p>Stay tuned for more tournaments and club activities!</p>
+</section>
+
+<script>
+function toggleMenu(){document.querySelector('.nav-links').classList.toggle('active');}
+</script>
+</body>
+</html>

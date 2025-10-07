@@ -1,0 +1,146 @@
+/* === General Page Styles === */
+body {
+  background: linear-gradient(180deg, #800000, #4d0000);
+  color: #E0E0E0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 10px;
+  border-bottom: 2px solid #C5A200;
+}
+
+header img {
+  width: 180px;
+  border-radius: 10px;
+}
+
+header h1 {
+  color: #FFFFFF;
+  margin: 10px 0 5px;
+}
+
+header p {
+  color: #C5A200;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+/* === Navigation Bar === */
+nav {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #C5A200;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+}
+
+/* === Main Section === */
+main {
+  background-color: rgba(245, 245, 245, 0.1);
+  margin: 30px auto;
+  padding: 25px;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* === Headings === */
+h2 {
+  color: #FFFFFF;
+  border-bottom: 2px solid #C5A200;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #C5A200;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px 0;
+  font-size: 0.9em;
+  border-top: 2px solid #C5A200;
+  color: #E0E0E0;
+}nav {
+  background-color: #3a0a0a; /* dark maroon */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+nav .logo {
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: gold;
+}body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* stops horizontal scrolling */
+  background-color: whitesmoke;
+}
+
+nav {
+  background-color: #3a0a0a; /* dark maroon */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ makes nav wrap instead of overflowing */
+  width: 100%; /* ✅ keeps it within the page width */
+  box-sizing: border-box; /* ✅ makes padding counted inside width */
+}nav {
+  background-color: #3a0a0a; /* dark maroon */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+
+  /* ✅ Sticky navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* stays above content */
+}
+
+
+
